@@ -5,4 +5,4 @@ My personal collection of solved excercises from the book _Structure and Interpr
 
 Full text of the book (including instructions for the exercises) is available free of charge [here](http://mitpress.mit.edu/sicp/full-text/book/book.html).
 
-Written in Scheme. All files are ready to be executed in the shell, given that [GNU Guile](www.gnu.org/software/guile) is present on the system.
+Written in Scheme. All files are ready to be executed in the shell, given that [GNU Guile](http://www.gnu.org/software/guile) is present on the system.
