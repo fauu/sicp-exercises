@@ -2,12 +2,13 @@
 !#
 
 (define (cont-frac n d k)
-  (let ((max (- k 1)))
+  (define (cont-frac-recur n d k max)
     (if (= k 0)
          0
-         (/ (n (- max k)) 
-            (+ (d (- max k))
-               (cont-frac n d (- k 1)))))))
+         (/ (n (+ 1 (- max k))) 
+            (+ (d (+ 1 (- max k)))
+               (cont-frac-recur n d (- k 1) max)))))
+  (cont-frac-recur n d k k))
 
 (define (cont-frac-iter n d k)
   (define (iter k result)
